@@ -1,0 +1,33 @@
+
+/*画像サイズ指定*/
+@media screen and (max-width:739px) {
+    /*スマホ用のcssを記述*/
+    #XiactiveTan{
+        width: 90vmin;
+    }
+
+    #undertext{
+        font-size:3vmin;
+    }
+  }
+  
+  @media only screen and (min-width:740px) and (max-width:1150px) {
+    /*tablet用のcssを記述*/
+    #XiactiveTan{
+        width: 90vmin;
+    }
+
+    #undertext{
+        font-size:2.5vmin;
+    }
+  }
+  
+  @media screen and (min-width:1150px) {
+    #XiactiveTan{
+        width: 50vw;
+    }
+
+    #undertext{
+        font-size: 1.5vw;
+    }
+  }

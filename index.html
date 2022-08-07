@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="dns-prefetch" href="//fonts.googleapis.com"> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes user-scalable=no">
+        <title>タンなんのさいと せかんど</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" id="webfont">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin
+            id="webfont">
+        <link rel="icon" href="favicon.ico">
+        <style>
+            html {
+                scroll-behavior: smooth;
+                font-family: 'Inter', 'Noto Sans JP';
+                font-weight: 700;
+                overflow-y: hidden;
+            }
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: rgb(235, 235, 235);
+                background-image: url(image/background.png);
+                background-size: 360px 360px; /* image size */
+                animation: bg 15s infinite linear,ST 0.5s both cubic-bezier(0.455, 0.03,  0.515, 0.955);
+                backdrop-filter: blur(2px);
+                -webkit-backdrop-filter: blur(2px);
+                overflow-x: hidden;
+            }
+            @keyframes bg {
+                0% {
+                  background-position: 0 0;
+                }
+                100% {
+                  background-position: 360px 360px;
+                }
+            }
+
+            @keyframes ST {
+                0%{
+                    opacity: -4;
+                    transform: scale(2,2);
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: scale(1,1);
+                }
+            }
+
+
+
+            .flexbox{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            #full{
+                height:100vh;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                overflow: hidden;
+            }
+        </style>
+        <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        
+    </head>
+
+    <body>
+            <div id="full" data-speed-y="40">
+            </div>
+    </body>
+
+    
+    
+</html>
